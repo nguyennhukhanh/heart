@@ -76,7 +76,7 @@ const init = () => {
             q: ~~(rand() * heartPointsCount),
             D: 2 * (i % 2) - 1,
             force: 0.2 * rand() + 0.7,
-            f: "hsla(0," + ~~(40 * rand() + 60) + "%," + ~~(60 * rand() + 20) + "%,.3)",
+            f: "hsla(" + Math.round(Math.random(1) + 0) + "," + ~~(40 * rand() + 60) + "%," + ~~(60 * rand() + 20) + "%,.3)",
             trace: []
         };
         for (let k = 0; k < traceCount; k++) e[i].trace[k] = { x: x, y: y };
